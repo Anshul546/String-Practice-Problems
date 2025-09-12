@@ -1,0 +1,10 @@
+import java.util.*;
+class ToggleCase {
+    public static void main(String[] a) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine(), r = "";
+        for(char ch : s.toCharArray())
+            r += (ch>='A' && ch<='Z') ? (char)(ch+'a'-'A') : (ch>='a' && ch<='z') ? (char)(ch+'A'-'a') : ch;
+        System.out.println(r);
+    }
+}
