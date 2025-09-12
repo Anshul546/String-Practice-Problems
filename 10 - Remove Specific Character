@@ -1,0 +1,12 @@
+import java.util.*;
+class RemoveChar {
+    public static void main(String[] a) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        char ch = sc.next().charAt(0), r = "";
+        for(int i=0;i<s.length();i++)
+            if(s.charAt(i)!=ch)
+                r+=s.charAt(i);
+        System.out.println(r);
+    }
+}
