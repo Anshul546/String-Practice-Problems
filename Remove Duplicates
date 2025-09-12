@@ -1,0 +1,11 @@
+import java.util.*;
+class RemoveDuplicates {
+    public static void main(String[] a) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine(), r = "";
+        for(char ch : s.toCharArray())
+            if(r.indexOf(ch) == -1)
+                r += ch;
+        System.out.println(r);
+    }
+}
