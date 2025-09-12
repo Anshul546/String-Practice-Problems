@@ -1,0 +1,13 @@
+import java.util.*;
+class ReplaceWord {
+    public static void main(String[] a) {
+        Scanner sc = new Scanner(System.in);
+        String sentence = sc.nextLine(), oldWord = sc.nextLine(), newWord = sc.nextLine(), result = "";
+        String[] words = sentence.split(" ");
+        for(int i=0;i<words.length;i++) {
+            result += words[i].equals(oldWord) ? newWord : words[i];
+            if(i<words.length-1) result += " ";
+        }
+        System.out.println(result);
+    }
+}
