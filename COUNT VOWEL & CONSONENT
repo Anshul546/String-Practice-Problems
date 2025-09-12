@@ -1,4 +1,3 @@
-// COUNT VOWEL & CONSONENT.//
 
 import java.util.*;
 class VowelConsonant {
